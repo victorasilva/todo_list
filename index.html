@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<style>
+    button {
+        background-color: rgba(165, 206, 253, 0.342);
+        border: none;
+        padding: 4px;
+        margin-left: 5px;
+    }
+    th {
+        text-align: center;
+    }
+    .btn-select {
+        width: 16rem;
+        border-radius: 10px;
+    }
+    .btn-actions {
+        border-radius: 10px;
+        width: 8rem;
+    }
+    .actions{
+        text-align: center;
+        width: 30rem;
+    }
+
+</style>
+<body>
+    <div class="container">
+        <h2>My ToDo List</h2>
+        <label for="task">Descrição:</label>
+        <input type="text" id="task" name="task">
+        <button type="button">Cadastrar</button>
+        <br>
+        <br>
+        <table class="table table-bordered">
+            <tdead>
+                <tr>
+                    <th></th>
+                    <th>Tarefa</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td></td>
+                    <td class="actions">
+                        <button type="button" class="btn-actions">Editar</button>
+                        <button type="button" class="btn-actions">Excluir</button>
+                        <button type="button" class="btn-actions">Finalizar</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td></td>
+                    <td  class="actions">
+                        <button type="button" class="btn-actions">Editar</button>
+                        <button type="button" class="btn-actions">Excluir</button>
+                        <button type="button" class="btn-actions">Finalizar</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td></td>
+                    <td  class="actions">
+                        <button type="button" class="btn-actions">Editar</button>
+                        <button type="button" class="btn-actions">Excluir</button>
+                        <button type="button" class="btn-actions">Finalizar</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <button type="button" class="btn-select">Selecionar Todos</button>
+        <button type="button" class="btn-select">Finalizar Selecionados</button>
+    </div>
+</body>
+</html>
